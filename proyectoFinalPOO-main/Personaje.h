@@ -1,7 +1,3 @@
-//
-// Created by ADRIANA on 3/05/2025.
-//
-
 #ifndef PERSONAJE_H
 #define PERSONAJE_H
 #include <string>
@@ -26,10 +22,7 @@ public:
     void setNombre(std::string& nombre);
     void setVitalidad(int vitalidad);
     void setAlimento(int alimento);
-    void setPosicion(const std::vector<int>& posicion);
-
+    void setPosicion(const std::vector<int>* posicion);
 };
-
-
 
 #endif //PERSONAJE_H

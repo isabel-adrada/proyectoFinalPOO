@@ -13,12 +13,10 @@
 #include <string>
 
 class Juego {
-protected:
+private:
     std::vector<Personaje*> personajes;
     std::map<std::string, Jugador*> jugadores;
     std::vector<Escenario*> escenarios;
-
-private:
     std::map<int, std::string> top10;  // Mapa de puntaje a nombre
 
 public:

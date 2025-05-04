@@ -1,7 +1,3 @@
-//
-// Created by María Antonia Gil on 21/04/25.
-//
-
 #include "Ray.h"
 #include <iostream>
 

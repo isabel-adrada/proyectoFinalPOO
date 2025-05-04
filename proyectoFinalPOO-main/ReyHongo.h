@@ -20,14 +20,13 @@ public:
     void controlMental();
     int propagarEsporas();
     void robarEnergia(int vitalidad);
-    void recibirDañoLuz();
-    std::vector<HormigaInfectada*> getHormigasInfectadas() const;
-    void setHormigasInfectadas(const std::vector<HormigaInfectada*>& hormigasInfectadas);
+    void recibirDañoLuz(int  luz);
+
+    void setHormigasInfectadas(std::vector<HormigaInfectada*>& hormigasInfectadas);
+    std::vector<HormigaInfectada*> getHormigasInfectadas();
+
     void agregarHormigaInfectada(HormigaInfectada* hormiga);
     void eliminarHormigaInfectada(HormigaInfectada* hormiga);
 };
-
-
-
 
 #endif //REYHONGO_H

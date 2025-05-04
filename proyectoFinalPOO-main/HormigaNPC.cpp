@@ -1,5 +1,13 @@
-//
-// Created by ADRIANA on 3/05/2025.
-//
-
 #include "HormigaNPC.h"
+
+HormigaNPC::HormigaNPC() {
+
+};
+
+virtual HormigaNPC::~HormigaNPC() {
+
+};
+
+void HormigaNPC::caminarPredeterminado() {
+
+};

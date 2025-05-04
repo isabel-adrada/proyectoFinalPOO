@@ -1,7 +1,3 @@
-//
-// Created by ADRIANA on 3/05/2025.
-//
-
 #ifndef HORMIGAINFECTADA_H
 #define HORMIGAINFECTADA_H
 #include "Personaje.h"
@@ -14,7 +10,5 @@ public:
     int liberarEsporas();
     void caminarErraticamente();
 };
-
-
 
 #endif //HORMIGAINFECTADA_H

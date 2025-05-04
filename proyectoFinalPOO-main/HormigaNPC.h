@@ -1,7 +1,3 @@
-//
-// Created by ADRIANA on 3/05/2025.
-//
-
 #ifndef HORMIGA_NPC_H
 #define HORMIGA_NPC_H
 
@@ -13,7 +9,5 @@ public:
     virtual ~HormigaNPC();
     void caminarPredeterminado();
 };
-
-
 
 #endif //HORMIGANPC_H
