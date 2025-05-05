@@ -14,6 +14,23 @@ find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 add_executable(practica_sfml
         main.cpp
         Ray.cpp
-        Ray.h)
+        Ray.h
+        Personaje.cpp
+        Personaje.h
+        ReyHongo.cpp
+        ReyHongo.h
+        HormigaNormal.cpp
+        HormigaNormal.h
+        HormigaNPC.cpp
+        HormigaNPC.h
+        HormigaInfectada.cpp
+        HormigaInfectada.h
+        Jugador.cpp
+        Jugador.h
+        Juego.cpp
+        Juego.h
+        Escenario.cpp
+        Escenario.h
+)
 
 target_link_libraries(practica_sfml sfml-graphics sfml-window sfml-system)

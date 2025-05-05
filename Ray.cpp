@@ -1,7 +1,3 @@
-//
-// Created by María Antonia Gil on 21/04/25.
-//
-
 #include "Ray.h"
 #include <iostream>
 
@@ -9,7 +5,7 @@ Ray::Ray() {
     // Cargar texturas derecha
     sf::Texture texD1, texD2;
     if (!texD1.loadFromFile("ant_right_1.png") || !texD2.loadFromFile("ant_right_2.png")) {
-        std::cerr << "Error cargando imágenes derecha\n";
+        std::cerr << "Error cargando imágenes derecha" << std::endl;
     }
     texturasDerecha.push_back(texD1);
     texturasDerecha.push_back(texD2);
@@ -17,7 +13,7 @@ Ray::Ray() {
     // Cargar texturas izquierda
     sf::Texture texI1, texI2;
     if (!texI1.loadFromFile("ant_left_1.png") || !texI2.loadFromFile("ant_left_2.png")) {
-        std::cerr << "Error cargando imágenes izquierda\n";
+        std::cerr << "Error cargando imágenes izquierda" << std::endl;
     }
     texturasIzquierda.push_back(texI1);
     texturasIzquierda.push_back(texI2);
@@ -25,7 +21,13 @@ Ray::Ray() {
     sprite.setTexture(texturasDerecha[0]);
     sprite.setPosition(100.f, 100.f);
     sprite.setScale(2.0f, 2.0f); // escalar si es muy pequeño
+
+    this -> luz = 0;
 }
+
+Ray::~Ray() {
+    std::cout << "Ray gone" << std::endl;
+};
 
 void Ray::moverDerecha() {
     moviendoDerecha = true;
