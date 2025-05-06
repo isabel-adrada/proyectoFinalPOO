@@ -498,4 +498,6 @@ CMakeFiles/practica_sfml.dir/main.cpp.o: \
   /Users/IsabelAdrada/Library/Mobile\ Documents/com~apple~CloudDocs/universidad/semestre\ 4/programación\ orientada\ a\ objetos/proyectoFinalPOO/Ray.h \
   /Users/IsabelAdrada/Library/Mobile\ Documents/com~apple~CloudDocs/universidad/semestre\ 4/programación\ orientada\ a\ objetos/proyectoFinalPOO/Jugador.h \
   /Users/IsabelAdrada/Library/Mobile\ Documents/com~apple~CloudDocs/universidad/semestre\ 4/programación\ orientada\ a\ objetos/proyectoFinalPOO/HormigaNormal.h \
-  /Users/IsabelAdrada/Library/Mobile\ Documents/com~apple~CloudDocs/universidad/semestre\ 4/programación\ orientada\ a\ objetos/proyectoFinalPOO/Personaje.h
+  /Users/IsabelAdrada/Library/Mobile\ Documents/com~apple~CloudDocs/universidad/semestre\ 4/programación\ orientada\ a\ objetos/proyectoFinalPOO/Personaje.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/istream

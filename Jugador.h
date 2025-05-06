@@ -5,16 +5,16 @@
 
 class Jugador {
 protected:
-    std::string nombre;
+    std::string nombreJugador;
     int puntaje;
 
 public:
     Jugador();
-    Jugador(std::string nombre);
+    Jugador(std::string nombreJugador);
     virtual ~Jugador();
-    std::string getNombre();
+    std::string getNombreJugador();
     int getPuntaje();
-    void setNombre(std::string nombre);
+    void setNombreJugador(std::string nombreJugador);
     void setPuntaje(int puntaje);
 };
 

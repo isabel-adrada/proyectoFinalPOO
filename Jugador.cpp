@@ -1,7 +1,7 @@
 #include "Jugador.h"
 
-Jugador::Jugador(std::string nombre) {
-    this -> nombre = nombre;
+Jugador::Jugador(std::string nombreJugador) {
+    this -> nombreJugador = nombreJugador;
     this -> puntaje = 0;
 };
 
@@ -9,18 +9,19 @@ Jugador::Jugador() {
 };
 
 Jugador::~Jugador() {
+
 };
 
-std::string Jugador::getNombre() {
-    return nombre;
+std::string Jugador::getNombreJugador() {
+    return nombreJugador;
 };
 
 int Jugador::getPuntaje() {
     return puntaje;
 };
 
-void Jugador::setNombre(std::string nombre) {
-    this -> nombre = nombre;
+void Jugador::setNombreJugador(std::string nombreJugador) {
+    this -> nombreJugador = nombreJugador;
 };
 
 void Jugador::setPuntaje(int puntaje) {

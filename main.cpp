@@ -1,10 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include "Ray.h"
+#include <iostream>
 
 int main() {
     sf::RenderWindow ventana(sf::VideoMode(240, 180), "MiJuego");
 
-    Ray ray;
+    Ray *ray = new Ray("Nombre");
 
     while (ventana.isOpen()) {
         sf::Event evento;
@@ -18,29 +19,23 @@ int main() {
                 ventana.setView(sf::View(visibleArea));
             }
         }
-
         // Por defecto está quieto, a menos que se mueva
-        ray.detener();
+        ray -> detener();
 
         // Movimiento con teclas
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-            ray.moverIzquierda();
+            ray -> caminarAtras();
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-            ray.moverDerecha();
+            ray -> caminarAdelante();
 
         // Actualiza animación si está en movimiento
-        ray.actualizar();
+        ray -> actualizar();
 
         ventana.clear();
-        ray.dibujar(ventana);
+        ray -> dibujar(ventana);
         ventana.display();
     }
 
+
     return 0;
 }
-
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.

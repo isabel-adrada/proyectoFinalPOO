@@ -8,7 +8,8 @@ ReyHongo::~ReyHongo() {
 };
 
 int ReyHongo::liberarEsporas() {
-
+    int esporas;
+    return esporas;
 };
 
 void ReyHongo::controlMental() {
@@ -16,7 +17,8 @@ void ReyHongo::controlMental() {
 };
 
 int ReyHongo::propagarEsporas() {
-
+    int esporas;
+    return esporas;
 };
 
 void ReyHongo::robarEnergia(int vitalidad) {
