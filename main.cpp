@@ -7,6 +7,7 @@ int main() {
 
     Ray *ray = new Ray("Nombre");
 
+
     while (ventana.isOpen()) {
         sf::Event evento;
         while (ventana.pollEvent(evento)) {
